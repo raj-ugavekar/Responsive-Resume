@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/roboto.min.css");
+
+:root{
+    --baseColor:#f5f5f5;
+    --backgrundColor:#fff;
+    --fontColor:#3a3a3a;
+    --lineColor:#818181;
+    --greyColor:#e5e5e5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--baseColor);
+    width:100%;
+    height: auto;
+    color: var(--fontColor);
+}
+
+h3{
+    text-transform: uppercase;
+    font-family: 'HK Grotesk', sans-serif;
+    line-height: 2;
+    letter-spacing:5px;
+    font-size:18px;
+}
+
+h4{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 14px;
+}
+
+.resume{
+    max-width: 800px;
+    margin:0.5rem auto;
+    background-color: var(--backgrundColor);
+    padding: 1rem 1rem;
+    box-shadow:rgba(99, 99,99, 0.2) 0px 2px 8px;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image{
+    width:150px;
+    height: 200px;
+    object-fit:cover;
+    position:relative;
+    animation: show 2s .5s;
+}
+
+.header-name{
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-family: 'HK Grotesk', sans-serif;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    text-align: left;
+    position:relative;
+    animation: show 2s .5s;
+}
+
+.header-job{
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 3px;
+    padding-bottom: 0.5rem;
+    position:relative;
+    animation: show 2s .5s;
+}
+
+.header-contact{
+    font-size: 13px;
+    position:relative;
+    animation: show 2s .5s;
+    width:100%;
+    padding:0.5rem 0;
+}
+
+a img{
+        margin-right: 2px;
+        object-fit:cover;
+        position:relative;
+        animation: show 2s 0.5s;
+}
+
+.img-phone{
+    width:17px;
+    height: 10px;
+}
+
+.img-map{
+    width:12px;
+    height: 10px;
+}
+
+.img-cal{
+    width:12px;
+    height: 12px;
+}
+
+.img-mail{
+    width:15px;
+    height: 10px;
+}
+
+.img-github{
+    width:15px;
+    height: 12px;
+}
+
+.img-linkedin{
+    width:15px;
+    height: 12px;
+}
+
+.body-resume{
+
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.left-resume{
+    padding: 0 1rem;
+    text-align:left;
+    background:#f1f1f1;
+}
+
+.right-resume{
+    padding:0 1rem ;
+    text-align: left;
+  
+}
+
+.card-resume{
+    padding: 0.5rem 1rem;
+    position:relative;
+    animation: show 2s .5s;
+}
+
+.detail{
+    padding: 0.5rem 0;
+}
+
+.subdetail{
+    padding: 0.5rem 0;
+}
+
+/*----------Skills and Languages Bar-----------*/
+.skills{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+
+.skills-bar{
+    width: 100%;
+    height:10px;
+    border-radius:10px;
+    background:var(--greyColor);
+    position: relative;
+}
+
+.skills-fill{
+    height: 10px;
+    background-color: var(--lineColor);
+    border-radius:10px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.c{
+    width: 60%;
+}
+
+.wtech{
+    width: 75%;
+}
+
+.java{
+    width: 60%;
+}
+
+.dbms{
+    width: 60%;
+}
+.eng{
+    width: 70%;
+}
+
+.hin{
+    width: 65%;
+}
+
+.mar{
+    width: 75%;
+}
+
+.kon{
+    width: 60%;
+}
+
+/*-------Hobbies--------*/
+.hobbies{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.hobbies img{
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    padding: 5px;
+    object-fit: contain;
+    border: 1px solid var(--greyColor);
+    border-radius: 10px;
+}
+
+/*----------UnderLine for Section Title-----------*/
+.divider{
+    margin: 1rem 2rem;
+    width: 90%;
+    border: 1px solid var(--lineColor);
+}
+
+/*----------SideLine for Education,Projects,Courses-----------*/
+.data{
+    border-left: 2px solid #ccc;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+/*----------Side-Dot for Education,Projects,Courses-----------*/
+.tl-title-2::before{
+    content: "";
+    position: absolute;
+    margin-top: .2rem;
+    width: .5rem;
+    height: .5rem;
+    background-color: #484b4c;
+    border-radius: 50%;
+    transform: translateX(-60%);
+    left: 0;
+}
+
+/*Remove underline from links*/
+a{
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+/*--------Loading Animation----------*/
+@keyframes show{
+    from{
+        opacity:0;
+        top:-10px;
+    }
+    to{
+        opacity: 1;
+        top:0;
+    }
+}
+
+/*-----Responsive for the mobile------*/
+@media screen and  (max-width:630){
+    .body-resume{
+        grid-template-columns: repeat(1,1fr);
+    }
+  
+   .left-resume{
+            text-align:left;
+    }
+}
